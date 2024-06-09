@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guía de instalación de Debian">
+    <meta name="keywords" content="Debian, instalación, guía">
+    <meta name="author" content="Sebastián Soto>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de instalación de Debian</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="head">
+        <h1>Guía de instalación de Debian</h1>
+        <div class="logos">
+            <img src="images/Debian_logo.png" alt="Debian">
+            <img src="images/Virtualbox_logo.png" alt="Oracle Virtualbox logo">
+        </div>
+    </div>
+    <div class="content">
+        <div class="requisitos">
+        <h2>Requisitos</h2>
+        <h3>Oracle Virtualbox</h3>
+        <ul>
+            <li>Cualquier procesador intel o AMD actual.</li>
+            <li>Por lo menos 512 MB de RAM, aunque con menos de 2GB la experiencia no será tan disfrutable.</li>
+            <li>Por lo menos 10 GB de espacio en disco.</li>\
+            <li>Cualquier sistema operativo soportado.</li>
+            <li>Una ISO del sistema operativo que queremos probar, en este caso la distribución de Linux "Debian"</li>
+        </ul>
+        </div>
+        <h3>Debian</h3>
+        <ul>
+            <li>Procesador de 1 GHz o superior.</li>
+            <li>512 MB, aunque preferible 2 GB o más.</li>
+            <li>10 GB de espacio en disco o más.</li>
+        </ul>
+        <h2>Instalación</h2>
+        <h3>Oracle Virtualbox</h3>
+        <ol>
+            <li>Visitar la página de Oracle VM VirtualBox <a href="https://www.virtualbox.org/">aquí</a>.</li>
+            <img src="images/Captura de pantalla 2024-06-09 135200.png" alt="Página de VirtualBox">
+            <li>Visitar la página de descargas y seleccionar nuestro sistema operativo.</li>
+            <img src="images/Captura de pantalla 2024-06-09 135225.png" alt="Descargar Virtualbox">
+            <li>Cuando se haya descargado el instalador deberemos hacer click sobre este para empezar la instalación.</li>
+            <img src="images/Captura de pantalla 2024-06-09 135358.png" alt="Instalador de Virtualbox">
+            <li><strong>Si obtenemos un error con respecto al paquete de Microsoft Virtual C++ haremos lo siguiente</strong>, <em>*Si no, continua <a href="#continuar">acá.</a></em></li>
+            <img src="images/Captura de pantalla 2024-06-09 135519.png" alt="Error de Microsoft Virtual C++">
+            <ol>
+                <li>Descargar el paquete de Microsoft Visual C++ <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170">aquí</a>.</li>
+                <img src="images/Captura de pantalla 2024-06-09 135544.png" alt="Página de descarga de Visual C++">
+                <li>Selecciona tu sistema operativo.</li>
+                <img src="images/Captura de pantalla 2024-06-09 135604.png" alt="Descargar Visual C++">
+                <li>Seleccion el archivo de instalación descargado, acepta los términos de licencia y selecciona "Install", continua la instalación dando click a next y aceptar conforme sea necesario.</li>
+                <img src="images/Captura de pantalla 2024-06-09 135627.png" alt="Instalador de Visual C++">
+                <li>Una vez descargado, ejecuta el instalador de Oracle VM y sigue los pasos.</li>
+            </ol>
+            <li id="continuar">En el instalador de VirtualBox daremos next y aceptaremos hasta llegar al final de la instalación.</li>
+            <img src="images/Captura de pantalla 2024-06-09 135718.png" alt="Instalador de Virtualbox">
+            <li>Una vez instalado, daremos click a finalizar y abriremos VirtualBox.</li>
+            <img src="images/Captura de pantalla 2024-06-09 135834.png" alt="Finalización del instalador de VirtualBox">
+            </ol>
+        <h3>Debian</h3>
+        <ol>
+            <li>Descargar la ISO de Debian <a href="https://www.debian.org/download">aquí</a>.</li>
+            <img src="images/Captura de pantalla 2024-06-09 141359.png" alt="Página en el buscador de Debian">
+            <li>Daremos click en debian-12.5.0-amd64-netinst.iso y nos descargará la ISO.</li>
+            <img src="images/Captura de pantalla 2024-06-09 141544.png" alt="Descargar ISO de Debian">
+        </ol>
+        <h2>Configuración</h2>
+        <ol>
+            <li>Una vez descargada tanto la ISO como VirtualBox iniciaremos VirtualBox y daremos click en "Nueva".</li>
+            <img src="images/Captura de pantalla 2024-06-09 141720.png" alt="Crear máquina virtual">
+            <li>Seleccionaremos el nombre de la máquina, la carpeta de instalación y la ISO.</li>
+            <img src="images/Captura de pantalla 2024-06-09 141825.png" alt="Configuración de la máquina virtual">
+            <li>Asignaremos las credenciales de la máquina.</li>
+            <img src="images/Captura de pantalla 2024-06-09 142009.png" alt="Credenciales de la máquina virtual">
+            <li>Asignaremos la cantidad de RAM y nucleos que queremos asignar a la máquina.</li>
+            <img src="images/Captura de pantalla 2024-06-09 142047.png" alt="Asignación de recursos de la máquina virtual">
+            <li>Asignaremos el tamaño de disco que queremos asignar a la máquina.</li>
+            <img src="images/Captura de pantalla 2024-06-09 142107.png" alt="Tamaño de disco de la máquina virtual">
+            <li>Una vez configurada la máquina, daremos click en "Iniciar" y dejaremos que se termine de descargar Debian automáticamente.</li>
+            <img src="images/Captura de pantalla 2024-06-09 142210.png" alt="Iniciar máquina virtual">
+            <li>Finalmente, podemos disfrutar de nuestra máquina virtual de Debian.</li>
+            <img src="images/Captura de pantalla 2024-06-09 153546.png" alt="Máquina virtual de Debian">
+        </ol>
+    </div>
+</body>
+</html>
